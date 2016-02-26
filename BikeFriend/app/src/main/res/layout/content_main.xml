@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_main"
+    android:paddingBottom="16dp"
+    android:weightSum="1"
+    tools:context="com.example.joseph.bikefriend.MainActivity"
+    android:background="@color/colorDarkBackground">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:showIn="@layout/activity_main"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:id="@+id/topText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Spd"
+            android:gravity="center_horizontal"
+            android:textSize="140sp"
+            android:textColor="@color/colorLightText"/>
+
+        <TextView
+            android:id="@+id/topUnits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mph"
+            android:gravity="right"
+            android:textSize="30sp"
+            android:textColor="@color/colorLightText"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomLabel"
+        android:text="dist"
+        android:gravity="left"
+        android:textSize="25sp"
+        android:textColor="@color/colorLightText"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:showIn="@layout/activity_main">
+
+        <TextView
+            android:id="@+id/bottomText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="dist"
+            android:gravity="center_horizontal"
+            android:textSize="110sp"
+            android:textColor="@color/colorLightText"/>
+
+        <TextView
+            android:id="@+id/bottomUnits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mi"
+            android:textSize="25sp"
+            android:textColor="@color/colorLightText"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        tools:showIn="@layout/activity_main">
+
+        <Button
+            android:id="@+id/leftButton"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="@string/left_button"
+            android:textSize="25sp"
+            android:background="@color/colorButton"
+            android:onClick="leftButtonClick"/>
+
+        <TextView
+            android:layout_width="16dp"
+            android:layout_height="100dp"/>
+
+        <Button
+            android:id="@+id/rightButton"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="@string/right_button"
+            android:textSize="25sp"
+            android:background="@color/colorButton"
+            android:onClick="rightButtonClick"/>
+
+    </LinearLayout>
+</LinearLayout>
+
